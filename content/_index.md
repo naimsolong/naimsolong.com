@@ -6,7 +6,7 @@ draft: false
 
 I'm Amirul, a full-stack Laravel developer passionate in helping business growth. With {{< years-experience >}} of web development experiences across multiple industries - e-commerce, human resources, point of sales - I'm curious and still love to learn new things on how tech work behind the scene.
 
-Currently I'm working on full-time basis, and will share knowledge and updates about my career progress in articles and journal.
+Currently I work on full-time basis, it's a pleasure to share knowledge and updates about my career progress in articles and journals.
 
 The value of **simplicity**, **integrity** and **empathy** are the ideals approach to problem solving in general.
 
