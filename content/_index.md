@@ -4,9 +4,17 @@ draft: false
 ---
 
 
-A full-stack developer passionate in helping people grow their business.
+I'm Amirul, a full-stack Laravel developer passionate in helping business growth. With {{< years-experience >}} of web development experiences across multiple industries - e-commerce, human resources, point of sales - I'm curious and still love to learn new things on how tech work behind the scene.
+
+Currently I'm working on full-time basis, and will share knowledge and updates about my career progress in articles and journal.
+
+The value of **simplicity**, **integrity** and **empathy** are the ideals approach to problem solving in general.
+
+<!-- Curious about how I work? Check out my uses page for a full list of all the software, gadgets, and services I use.  -->
 
 {{< section-images
+
+bigHeadline="What Do I Offer"
 
 headline1="Web Development"
 description1="Front-to-back-end development "
