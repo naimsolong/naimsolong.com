@@ -8,7 +8,7 @@ I'm Amirul, a full-stack Laravel developer passionate in helping business growth
 
 Currently I work on full-time basis, it's a pleasure to share knowledge and updates about my career progress in articles and journals.
 
-The value of **simplicity**, **integrity** and **empathy** are the ideals approach to problem solving in general.
+I'm believe that **simplicity**, **integrity** and **empathy** are the ideals approach to problem solving in general.
 
 <!-- Curious about how I work? Check out my uses page for a full list of all the software, gadgets, and services I use.  -->
 
