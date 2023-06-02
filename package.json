@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nixentric/Lowkey-Hugo-Theme.git"
+    "url": "git+https://github.com/naimsolong/Lowkey-Hugo-Theme.git"
   },
   "keywords": [
     "hugo",
@@ -18,9 +18,9 @@
   "author": "Nixentric",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nixentric/Lowkey-Hugo-Theme/issues"
+    "url": "https://github.com/naimsolong/Lowkey-Hugo-Theme/issues"
   },
-  "homepage": "https://github.com/nixentric/Lowkey-Hugo-Theme#readme",
+  "homepage": "https://github.com/naimsolong/Lowkey-Hugo-Theme#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
