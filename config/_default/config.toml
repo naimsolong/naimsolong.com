@@ -7,7 +7,7 @@ enableRobotsTXT = true
 
 # List Config
 summaryLength= 15
-paginate = 5
+paginate = 15
 
 [markup.highlight]
       codeFences = false
