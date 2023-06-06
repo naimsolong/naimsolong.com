@@ -2,7 +2,7 @@
 title: "Fresh UI using Bootstrap"
 date: 2019-08-01T12:22:32+08:00
 draft: false # Set 'false' to publish
-description: ""
+description: "Develop an intuitive user interface (UI) for the old XeerSoft's core system menu"
 categories:
 - Journals
 tags:
