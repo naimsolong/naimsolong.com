@@ -6,7 +6,7 @@ description: "Building a strong logo design for business including participating
 categories:
 - Journals
 tags:
-- 2017
+- RN Technologies
 - Internship
 - Freelance
 - Competition

@@ -6,7 +6,6 @@ description: ""
 categories:
 - Articles
 tags:
-- 2022
 - Svelte
 - Laravel
 ---

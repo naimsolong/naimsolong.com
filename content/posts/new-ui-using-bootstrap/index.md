@@ -6,7 +6,7 @@ description: "Develop an intuitive user interface (UI) for the old XeerSoft's co
 categories:
 - Journals
 tags:
-- 2019
+- XeerSoft
 - Rebranding
 - User Interface
 - Boostrap
@@ -15,7 +15,7 @@ tags:
 Assalamualaikum!
 
 ### XeerSoft's JB Branch
-Working in XeerSoft at JB branch has been a great up and down journey along with an awesome colleague - Amin, Kella and Izzuddin. We propose new method and new tool such as VS Code and Laravel framework in knowledge sharing so our officemate could grow together. 
+Working in [XeerSoft](https://xeersoft.com/) at JB branch has been a great up and down journey along with an awesome colleague - Amin, Kella and Izzuddin. We propose new method and new tool such as VS Code and Laravel framework in knowledge sharing so our officemate could grow together. 
 
 {{< images
 image1="photo-group.jpg"

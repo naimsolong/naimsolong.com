@@ -6,7 +6,9 @@ description: "Integration of PayDibs with XeerSoft's Web-POS system to allow cus
 categories:
 - Journals
 tags:
-- 2020
+- XeerSoft
+- QR Code
+- E-Wallet
 - POS
 - API Integration
 ---

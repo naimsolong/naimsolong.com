@@ -6,7 +6,7 @@ description: "Businesses must keep adapt to stay relevant through website rebran
 categories:
 - Journals
 tags:
-- 2018
+- RN Technologies
 - Internship
 - Rebranding
 - Website
