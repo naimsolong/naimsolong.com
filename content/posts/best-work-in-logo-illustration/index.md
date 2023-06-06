@@ -2,11 +2,12 @@
 title: "My best work in logo illustration"
 date: 2017-12-01T12:06:37+08:00
 draft: false # Set 'false' to publish
-description: "Building a strong logo design for business including participating in competition and event."
+description: "Building a strong logo design for business including participating in competition and event"
 categories:
 - Journals
 tags:
 - 2017
+- Internship
 - Freelance
 - Competition
 - Adobe Illustrator
