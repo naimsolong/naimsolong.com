@@ -2,6 +2,7 @@
 title: "Migrate from Webpack to Vite in Laravel"
 date: 2022-09-19T12:33:27+08:00
 draft: false # Set 'false' to publish
+imageSEO: ""
 description: "A build tool that aims to provides rich feature enhancements over native ES modules"
 categories:
 - Articles

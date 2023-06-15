@@ -2,7 +2,7 @@ baseURL = 'https://naimsolong.github.io/'
 copyright = "2019 - {year}" # To make 2007 - 2022. Just add before {year} example: 2007 - {year}
 languageCode = 'en-us'
 theme = 'lowkey'
-title = 'Amirul Naim'
+title = 'Amirul Naim Mohd Solong'
 enableRobotsTXT = true
 
 # List Config
@@ -21,3 +21,5 @@ paginate = 15
 
 [params]
       postHog = 'phc_Tvy9Z3Su6lhmQmQ0ILU0UDuJagS2k90PhbANAV3ZqwD'
+      tweetHandle = '@naimsolong'
+      imageSEO = ''

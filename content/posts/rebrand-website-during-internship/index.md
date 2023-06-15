@@ -2,6 +2,7 @@
 title: "Rebrand website during internship"
 date: 2018-01-01T12:21:26+08:00
 draft: false # Set 'false' to publish
+imageSEO: ""
 description: "Businesses must keep adapt to stay relevant through website rebranding"
 categories:
 - Journals

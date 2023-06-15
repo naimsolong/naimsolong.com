@@ -2,6 +2,7 @@
 title: "E-Wallet integration for Web-POS"
 date: 2020-12-02T12:26:18+08:00
 draft: false # Set 'false' to publish
+imageSEO: ""
 description: "Integration of PayDibs with XeerSoft's Web-POS system to allow customer to pay with E-Wallet"
 categories:
 - Journals
