@@ -1,15 +1,14 @@
 ---
-title: "Assalamualaikum!"
+title: "Full-Stack Laravel Developer"
 imageSEO: ""
 draft: false
 ---
 
+I'm Amirul, a passionate web application developer in helping business growth, with {{< years-experience >}} plus of web development experience across multiple industries - e-commerce, human resources, point of sales - I'm still curious and love to learn new things about how tech work behind the scene.
 
-I'm Amirul, a full-stack Laravel developer passionate in helping business growth. With {{< years-experience >}} of web development experiences across multiple industries - e-commerce, human resources, point of sales - I'm curious and still love to learn new things on how tech work behind the scene.
+Currently, work on a full-time basis, it's a pleasure to share knowledge and updates about my career progress in articles and journals.
 
-Currently I work on full-time basis, it's a pleasure to share knowledge and updates about my career progress in articles and journals.
-
-I'm believe that **simplicity**, **integrity** and **empathy** are the ideals approach to problem solving in general.
+I believe that **simplicity**, **integrity** and **empathy** are the ideal approach to problem-solving in general.
 
 <!-- Curious about how I work? Check out my uses page for a full list of all the software, gadgets, and services I use.  -->
 
