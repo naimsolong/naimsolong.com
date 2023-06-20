@@ -16,7 +16,7 @@ tags:
 
 Assalamualaikum!
 
-### XeerSoft Web-POS
+## XeerSoft Web-POS
 
 [XeerSoft](https://xeersoft.com/) is a One-Stop IT Solutions Provider that offered various solution such as Inventory, Accounting including Web-POS modules. One of the big clients that use XeerSoft’s Web-POS module is [Hup Soon](https://www.hupsoonfood.com/), retail convenience store chain. The main language core for their system is currently using pure PHP and build their own sophisticated framework.
 

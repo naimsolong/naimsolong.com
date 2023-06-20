@@ -15,11 +15,11 @@ tags:
 
 Assalamualaikum!
 
-### Vite
+## Vite
 
 [Vite](https://vitejs.dev/) is a **Next Generation Frontend Tool** that aims to provide a faster and leaner development experience for modern web projects in which aims to address these issues by leveraging new advancements in the ecosystem: the availability of native ES modules in the browser, and the rise of JavaScript tools written in compile-to-native languages.
 
-### Migrating from Laravel Mix to Vite
+## Migrating from Laravel Mix to Vite
 
 We're going to migrate this for [InertiaJS](https://inertiajs.com/) with [Svelte](https://svelte.dev/) and follow steps in-depth migration tutorial from the official [Laravel Vite plugin](https://github.com/laravel/vite-plugin/blob/main/UPGRADE.md#migrating-from-laravel-mix-to-vite):
 
@@ -37,7 +37,7 @@ We're going to migrate this for [InertiaJS](https://inertiajs.com/) with [Svelte
 
 ---
 
-#### Update Laravel Framework
+### Update Laravel Framework
 
 To make use of the new Vite integration, you will need to update to at least version `9.19.0` of the `laravel/framework`:
 
@@ -45,7 +45,7 @@ To make use of the new Vite integration, you will need to update to at least ver
 composer require laravel/framework:^9.19.0
 ```
 
-#### Install Vite and the Laravel Plugin
+### Install Vite and the Laravel Plugin
 
 First, you will need to install [Vite](https://vitejs.dev/) and the [Laravel Vite Plugin](https://www.npmjs.com/package/laravel-vite-plugin) using your npm package manager of choice:
 
@@ -59,7 +59,7 @@ You may also need to install additional Vite plugins for your project with Svelt
 npm install --save-dev @sveltejs/vite-plugin-svelte
 ```
 
-#### Configure Vite
+### Configure Vite
 
 Create a `vite.config.js` file in the root of your project:
 
@@ -77,7 +77,7 @@ export default defineConfig({
 });
 ```
 
-##### Update Aliases
+#### Update Aliases
 
 If you are migrating aliases from your `webpack.mix.js` file to your `vite.config.js` file, you should ensure that the paths start with `/`. For example, `resources/js` would become `/resources/js`:
 
@@ -99,7 +99,7 @@ export default defineConfig({
 
 For your convenience, the Laravel Vite plugin automatically adds an `@` alias for your `/resources/js` directory. If you do not need to customize your aliases, you may omit this section from your `vite.config.js` file.
 
-#### Update NPM scripts
+### Update NPM scripts
 
 Update your NPM scripts in `package.json`:
 
@@ -117,11 +117,11 @@ Update your NPM scripts in `package.json`:
   }
 ```
 
-#### Vite compatible imports
+### Vite compatible imports
 
 Vite only supports ES modules, so if you are upgrading an existing application you will need to replace any `require()` statements with `import`. You may refer to [this pull request](https://github.com/laravel/laravel/pull/5895/files) for an example.
 
-##### Inertia
+#### Inertia
 
 Inertia makes use of a `require()` call that is more complex to replicate with Vite.
 
@@ -149,7 +149,7 @@ Additionally, you should ensure you have updated to at least version `0.6.3` of 
 composer require inertiajs/inertia-laravel:^0.6.3
 ```
 
-#### Update environment variables
+### Update environment variables
 
 You will need to update the environment variables that are explicitly exposed in your `.env` files and in hosting environments such as Forge to use the `VITE_` prefix instead of `MIX_`:
 
@@ -172,7 +172,7 @@ You will also need to update these references in your JavaScript code to use the
 +    cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER,
 ```
 
-#### Importing your CSS from your JavaScript entry point(s)
+### Importing your CSS from your JavaScript entry point(s)
 
 If you are building an SPA, you will get a better experience by importing your CSS from your JavaScript entry point(s), such as your `resources/js/app.js` entry point:
 
@@ -183,7 +183,7 @@ If you are building an SPA, you will get a better experience by importing your C
 
 In development mode, Vite will automatically inject your CSS into the page. In production, a dedicated stylesheet will be generated that the `@vite` directive will load from the manifest.
 
-#### Replace `mix()` with `@vite`
+### Replace `mix()` with `@vite`
 
 When using Vite, you will need to use the `@vite` Blade directive instead of the `mix()` helper.
 
@@ -197,7 +197,7 @@ This will automatically detect whether you are running in serve or build mode an
 
 The entry points should match those used in your `vite.config.js`.
 
-#### Remove Laravel Mix
+### Remove Laravel Mix
 
 The Laravel Mix package can now be uninstalled:
 
@@ -213,7 +213,7 @@ rm webpack.mix.js
 
 If you are using StyleCI and have ignored the `webpack.mix.js` file in your configuration, you may also wish to remove the ignore rule.
 
-#### Update Test Helpers
+### Update Test Helpers
 
 If you are using the `$this->withoutMix();` helper in your tests, you should replace this with `$this->withoutVite()`:
 
@@ -222,7 +222,7 @@ If you are using the `$this->withoutMix();` helper in your tests, you should rep
 + $this->withoutVite();
 ```
 
-#### Optional: Configure Tailwind
+### Optional: Configure Tailwind
 
 If you are using Tailwind, perhaps with one of Laravel's starter kits, you will need migrate your `tailwind.config.js` to use [Vite compatible imports](#vite-compatible-imports) and exports.
 
@@ -273,7 +273,7 @@ export default {
 
 If you are using other PostCSS plugins, such as `postcss-import`, you will need to include them in your configuration.
 
-#### Optional: Git ignore the build directory
+### Optional: Git ignore the build directory
 
 Vite will place all of your build assets into a `build` subdirectory inside your public directory. If you prefer to build your assets on deploy instead of committing them to your repository, you may wish to add this directory to your `.gitignore` file:
 

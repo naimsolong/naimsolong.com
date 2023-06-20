@@ -15,7 +15,8 @@ tags:
 
 Assalamualaikum!
 
-### XeerSoft's JB Branch
+## XeerSoft's JB Branch
+
 Working in [XeerSoft](https://xeersoft.com/) at JB branch has been a great up and down journey along with an awesome colleague - Amin, Kella and Izzuddin. We propose new method and new tool such as VS Code and Laravel framework in knowledge sharing so our officemate could grow together. 
 
 {{< images

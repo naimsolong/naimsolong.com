@@ -15,12 +15,16 @@ tags:
 
 Assalamualaikum!
 
+## Internship at RN Technologies Sdn Bhd
+
 After finished task in [logo design](/posts/best-work-in-logo-illustration#during-internship), I was given responsibility to rebrand RN Technologies website as I join internship as web developer. It has been a great work and I've learned a lot back then because it one-man show project as I'm the only intern there. Eventhough this is fast-paced work in fast-changed technology trend, businesses must keep adapt to stay relevant.
 
 {{< images 
 image1="pic-website.png"
 alt1="Rebranded website"
 >}}
+
+### Rebranding Process
 
 The process start with discussion with my supervisor on what and how the website should be. As I compare with previous design, I keep try and error modifying the website's code to reflect new brand identity. So I proposed that we should use Bootstrap as structure base and proceeded using PHP to create a dynamic content. In addition we also use MySQL to access database for the event management system.
 

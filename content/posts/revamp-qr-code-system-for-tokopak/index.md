@@ -14,7 +14,7 @@ tags:
 
 Assalamualaikum!
 
-### Tokopak
+## Tokopak
 
 [Tokopak](http://www.pmtepsgroup.com.my/) is one of the [XeerSoft's](https://xeersoft.com/) biggest client, they produced polystyrene or foam that used to hold electronic device in box such as television or microwave as shown picture below. They usually deliver these polystyrene product to common electronic device provider such as Sharp, Panasonic, Philips, etc...
 
@@ -23,7 +23,7 @@ image1="photo-revamp-slideshow-1.png"
 alt1="Slideshow 1"
 >}}
 
-### Revamp QR Code System
+### Revamp Process
 
 My manager has form a group of three in which consist of two senior software developer and one intern including me as Technical Lead. Along with one project manager stationed at Melaka branch as it nearby to Tokopak's factory location. This project started as we dissect/study the existing QR Code system written in .NET, we had to learn how to open .NET project file from scratch and how to setup it's database connection. I admit it was hard as we try and error A LOT!
 
