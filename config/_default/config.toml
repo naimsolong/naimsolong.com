@@ -22,4 +22,4 @@ paginate = 15
 [params]
       postHog = 'phc_Tvy9Z3Su6lhmQmQ0ILU0UDuJagS2k90PhbANAV3ZqwD'
       tweetHandle = '@naimsolong'
-      imageSEO = ''
+      imageSEO = '/images/social-medias/social-media-front.png'

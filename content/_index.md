@@ -1,6 +1,5 @@
 ---
 title: "Full-Stack Laravel Developer"
-imageSEO: ""
 draft: false
 ---
 
