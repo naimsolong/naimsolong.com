@@ -18,22 +18,22 @@ bigHeadline="What Do I Offer"
 
 headline1="Web Development"
 description1="Front-to-back-end development "
-image1="images/skills/skill-web.webp"
+image1="images/skills/web-svgrepo-com.svg"
 alt1="Web Development"
 
 headline2="API Integration"
 description2="Allow system to drive revenue rapidly"
-image2="images/skills/skill-api.webp"
+image2="images/skills/api-svgrepo-com.svg"
 alt2="API Integration"
 
 headline3="Unit Test"
 description3="Build a fully automation tests script"
-image3="images/skills/skill-test.webp"
+image3="images/skills/tick-svgrepo-com.svg"
 alt3="Unit Test"
 
 headline4="Server Deployment"
 description4="Deployment using RunCloud"
-image4="images/skills/skill-server.webp"
+image4="images/skills/server-svgrepo-com.svg"
 alt4="Server Deployment"
 
 >}}
