@@ -2,7 +2,7 @@
 title: "3PL Integration for Indonesia Market"
 date: 2021-12-22T12:32:20+08:00
 draft: false # Set 'false' to publish
-imageSEO: "images/social-medias/social-3PL-integration-for-indonesia-market.png"
+imageSEO: "images/social-medias/social-media-3PL-integration-for-indonesia-market.png"
 description: "Integrate Third-Party-Logistic (3PL) API with Dropee for Indonesia Market"
 categories:
 - Journals

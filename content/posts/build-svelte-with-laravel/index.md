@@ -2,7 +2,7 @@
 title: "Build Svelte with Laravel"
 date: 2022-01-11T12:27:37+08:00
 draft: false # Set 'false' to publish
-imageSEO: "images/social-medias/social-build-svelte-with-laravel.png"
+imageSEO: "images/social-medias/social-media-build-svelte-with-laravel.png"
 description: "A radical changes in JavaScript world, writes code that surgically updates the DOM when the state of the app changes"
 categories:
 - Articles

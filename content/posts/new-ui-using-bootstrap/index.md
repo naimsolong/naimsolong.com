@@ -2,7 +2,7 @@
 title: "Fresh UI using Bootstrap"
 date: 2019-08-01T12:22:32+08:00
 draft: false # Set 'false' to publish
-imageSEO: "images/social-medias/social-new-ui-using-bootstrap.png"
+imageSEO: "images/social-medias/social-media-new-ui-using-bootstrap.png"
 description: "Develop an intuitive user interface (UI) for the old XeerSoft's core system menu"
 categories:
 - Journals
