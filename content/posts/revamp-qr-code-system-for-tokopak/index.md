@@ -2,7 +2,7 @@
 title: "Revamp Qr Code system for Tokopak"
 date: 2021-01-02T12:47:01+08:00
 draft: false # Set 'false' to publish
-imageSEO: ""
+imageSEO: "images/social-medias/social-revamp-qr-code-system-for-tokopak.png"
 description: "Challenges in revamp QR Code system from .NET into Laravel framework"
 categories:
 - Journals
