@@ -10,17 +10,17 @@
     url = "/posts"
     weight = 2
 
-# [[main]]
-#     identifier = "open-sources"
-#     name = "Open Sources"
-#     url = "/open-sources"
-#     weight = 2
-
 [[main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories"
-    weight = 3
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 2
+
+# [[main]]
+#     identifier = "categories"
+#     name = "Categories"
+#     url = "/categories"
+#     weight = 3
 
 [[main]]
     identifier = "tags"
