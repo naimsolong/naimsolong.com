@@ -1,31 +1,18 @@
 {
-  "name": "lowkey",
-  "version": "1.1.0",
-  "description": "A Clean and Simple Hugo theme inspired by Adam Wathan's (https://adamwathan.me/) Website.",
-  "main": "index.js",
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/naimsolong/Lowkey-Hugo-Theme.git"
-  },
-  "keywords": [
-    "hugo",
-    "hugo-themes",
-    "clean-themes"
-  ],
-  "author": "Nixentric",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/naimsolong/Lowkey-Hugo-Theme/issues"
-  },
-  "homepage": "https://github.com/naimsolong/Lowkey-Hugo-Theme#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.14",
-    "postcss": "^8.4.20",
-    "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.2.4"
+    "@nuxt/devtools": "latest",
+    "nuxt": "^3.7.4",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   }
 }
