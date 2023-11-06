@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const config = useRuntimeConfig()
+
 let currentYear = new Date().getFullYear();
 </script>
 
@@ -9,9 +11,9 @@ let currentYear = new Date().getFullYear();
         </div>
         <div class="order-1 sm:order-2">
             <ul class="flex sm:justify-end gap-5">
-                <li><a class="hover:text-gray-500" href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a class="hover:text-gray-500" href="/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a class="hover:text-gray-500" href="/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a class="hover:text-gray-500" :href="config.footer.social.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a class="hover:text-gray-500" :href="config.footer.social.twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a class="hover:text-gray-500" :href="config.footer.social.github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </div>
         <div class="sm:col-span-2 order-3">
