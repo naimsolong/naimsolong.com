@@ -2,7 +2,7 @@
     <header class="flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-10 pt-16 py-12">
         <div class="flex flex-col gap-5">
             <a href="/">
-                <p class="text-center sm:text-left text-4xl font-extrabold text-gray-800 ">Amirul Naim Mohd Solong</p>
+                <p class="text-center sm:text-left text-2xl font-bold text-gray-800 ">Amirul Naim Mohd Solong</p>
             </a>
             <nav>
                 <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
