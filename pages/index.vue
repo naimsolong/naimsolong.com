@@ -26,7 +26,7 @@
 
     <hr>
 
-    <FontsParagraph>
+    <FontsParagraph text_align="center">
       By using latest technology stack and tools that can scale but not limited to.
     </FontsParagraph>
   </div>
