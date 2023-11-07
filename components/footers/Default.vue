@@ -17,7 +17,12 @@ let currentYear = new Date().getFullYear();
             </ul>
         </div>
         <div class="sm:col-span-2 order-3">
-            <span class="font-normal">Inspiration from</span> <a class="hover:text-gray-500" href="https://github.com/nixentric/Lowkey-Hugo-Theme" target="_blank" rel="noopener noreferrer">Lowkey</a> <span class="font-normal">and</span> <a class="hover:text-gray-500" href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">SVG Repo</a>
+            <span class="font-normal">Inspiration from </span>
+            <a class="hover:text-gray-500" href="https://github.com/nixentric/Lowkey-Hugo-Theme" target="_blank" rel="noopener noreferrer">Lowkey</a>
+            <span class="font-normal"> and made with </span>
+            <a class="hover:text-gray-500" href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">NuxtJS</a>
+            <span class="font-normal">+</span>
+            <a class="hover:text-gray-500" href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">SVG Repo</a>
         </div>
     </footer>
 </template>
