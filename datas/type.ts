@@ -9,7 +9,7 @@ export interface BaseData {
 export interface PostData {
     headline: string;
     description: string;
-    link: string;
+    slug: string;
     image: string;
     alt?: string;
 }

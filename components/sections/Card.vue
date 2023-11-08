@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PostData } from '~/datas/type';
+import { modifyLink } from '~/datas/posts';
 
 const props = defineProps({
     post: {
@@ -11,8 +11,8 @@ const props = defineProps({
 
 <template>
     <div class="bg-white border border-gray-200 rounded-lg">
-        <a :href="props.post.link">
-            <img class="rounded-t-lg" :src="props.post.image" :alt="props.post.alt ?? 'Images'" />
+        <a :href="modifyLink(props.post.slug)">
+            <img v-if="props.post.image && props.post.image != ''" class="rounded-t-lg" :src="props.post.image" :alt="props.post.alt ?? 'Images'" />
             <div class="p-5">
                 <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900">{{ props.post.headline }}</h5>
                 <p class="mb-3 font-normal text-gray-700">{{ props.post.description }}</p>
