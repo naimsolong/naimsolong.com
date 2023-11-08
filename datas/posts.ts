@@ -25,6 +25,10 @@ export const modifyFullLink: string = (slug: string) => {
     return '/posts/' + slug
 }
 
+export const modifyImageLink: string = (slug: string, file_name: string) => {
+    return '/images/posts/'+slug+'/'+file_name
+}
+
 export const modifyFullImageLink: string = (slug: string) => {
     return '/posts/' + slug
 }

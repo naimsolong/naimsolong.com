@@ -17,6 +17,7 @@ const imageClasses = computed(() => {
         'small': 'h-16 w-16',
         'medium': 'h-24 w-24',
         'large': 'h-32 w-32',
+        'original': '',
     }
 
     return classes[props.size] + ' object-cover mx-auto'
