@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import { profile } from '~/datas/root'
+
+const route = useRoute()
+
+const activeRoute = (currentRoute: string) => {
+    return {'text-gray-900': route.path.includes(currentRoute)}
+}
 </script>
 
 <template>
@@ -9,11 +15,10 @@ import { profile } from '~/datas/root'
                 <p class="text-center sm:text-left text-2xl font-bold text-gray-800 ">{{ profile.fullname }}</p>
             </a>
             <nav>
-                <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
-                    <li class="text-gray-900"><a href="/">Home</a></li>
-                    <li class="hover:text-gray-500"><a href="/posts">Posts</a></li>
-                    <li class="hover:text-gray-500"><a href="/projects">Projects</a></li>
-                    <li class="hover:text-gray-500"><a href="/setup">Setup</a></li>
+                <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-gray-500">
+                    <li :class="activeRoute('/posts')"><a href="/posts">Posts</a></li>
+                    <li :class="activeRoute('/projects')"><a href="/projects">Projects</a></li>
+                    <li :class="activeRoute('/setup')"><a href="/setup">Setup</a></li>
                 </ul>
             </nav>
         </div>
