@@ -2,7 +2,7 @@
 interface ImageData {
     headline?: string;
     description?: string;
-    link: string;
+    link?: string;
     image: string;
     alt?: string;
 }
@@ -32,7 +32,7 @@ const imageClasses = computed(() => {
 <template>
     <div class="flex flex-wrap items-center w-full text-center">
         <div class="px-1 mx-auto" v-for="data in props.datas">
-            <a :href="data.link" target="_blank" rel="noopener noreferrer">
+            <a :href="data.link ?? '#'" :target="data.link ? '_blank' : ''" :disabled="data.link == null" rel="noopener noreferrer">
                 <img
                 :alt="data.alt ?? 'Images for ' + data.image"
                 :src="data.image"

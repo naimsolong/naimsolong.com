@@ -14,7 +14,7 @@
             </nav>
         </div>
         <div class="flex-none w-20 h-20 rounded-full overflow-hidden hidden sm:block">
-            <img srcset="https://picsum.photos/200" src="https://picsum.photos/200" width="200" height="200" alt="Sites">
+            <img src="/images/profiles/starlink.jpg" width="200" height="200" alt="Sites">
         </div>
     </header>
 </template>
