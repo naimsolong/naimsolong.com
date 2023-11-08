@@ -1,0 +1,3 @@
+<template>
+    Setup index
+</template>

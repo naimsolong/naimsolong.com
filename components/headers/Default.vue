@@ -7,9 +7,9 @@
             <nav>
                 <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
                     <li class="text-gray-900"><a href="/">Home</a></li>
-                    <li class="hover:text-gray-500"><a href="/">Posts</a></li>
-                    <li class="hover:text-gray-500"><a href="/">Projects</a></li>
-                    <li class="hover:text-gray-500"><a href="/">Setup</a></li>
+                    <li class="hover:text-gray-500"><a href="/posts">Posts</a></li>
+                    <li class="hover:text-gray-500"><a href="/projects">Projects</a></li>
+                    <li class="hover:text-gray-500"><a href="/setup">Setup</a></li>
                 </ul>
             </nav>
         </div>
