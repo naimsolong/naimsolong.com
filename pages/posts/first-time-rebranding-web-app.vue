@@ -104,7 +104,7 @@ const moduleLists = [
         <FontsParagraph>
             The event management's dashboard is using <FontsLink href="https://adminlte.io/">AdminLTE dashboard template</FontsLink>, the best open source admin dashboard & control panel theme.
             Built on top of Bootstrap, AdminLTE provides a range of responsive, reusable, and commonly used components.
-            In addition we also use MySQL to store the data and using PHP SESSION variable, using middle-ware concept to authenticate user, if the user is not login then system will redirect to login page.
+            In addition we also use MySQL to store the data and using PHP SESSION variable for middle-ware concept to authenticate user, if the user is not login then system will redirect to login page.
         </FontsParagraph>
     
         <FontsParagraph>
