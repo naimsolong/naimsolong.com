@@ -30,7 +30,7 @@ export const modifyImageLink: string = (slug: string, file_name: string) => {
 }
 
 export const modifyFullImageLink: string = (slug: string) => {
-    return '/posts/' + slug
+    return '/images/posts/'+slug+'/seo_image.jpg'
 }
 
 export const getSEOMeta: Object = (slug: string) => {
@@ -39,13 +39,13 @@ export const getSEOMeta: Object = (slug: string) => {
     return {
         author: profile.fullname,
         creator: profile.fullname,
-        title: post.headline,
+        title: post.headline + ' | ' + profile.username,
         description: post.description,
-        ogTitle: post.headline,
+        ogTitle: post.headline + ' | ' + profile.username,
         ogDescription: post.description,
         ogType: 'article',
         ogUrl: modifyFullLink(post.slug),
-        ogImage: modifyFullImageLink(post.image),
+        ogImage: modifyFullImageLink(post.slug),
         twitterCard: 'summary_large_image',
     }
 }
