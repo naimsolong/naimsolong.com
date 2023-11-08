@@ -1,8 +1,12 @@
+<script setup lang="ts">
+import { profile } from '~/datas/root'
+</script>
+
 <template>
     <header class="flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-10 pt-16 py-12">
         <div class="flex flex-col gap-5">
             <a href="/">
-                <p class="text-center sm:text-left text-2xl font-bold text-gray-800 ">Amirul Naim Mohd Solong</p>
+                <p class="text-center sm:text-left text-2xl font-bold text-gray-800 ">{{ profile.fullname }}</p>
             </a>
             <nav>
                 <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
@@ -14,7 +18,7 @@
             </nav>
         </div>
         <div class="flex-none w-20 h-20 rounded-full overflow-hidden hidden sm:block">
-            <img src="/images/profiles/starlink.jpg" width="200" height="200" alt="Sites">
+            <img :src="profile.image" width="200" height="200" alt="Sites">
         </div>
     </header>
 </template>

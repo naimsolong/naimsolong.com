@@ -1,11 +1,5 @@
 <script setup lang="ts">
-interface ImageData {
-    headline?: string;
-    description?: string;
-    link?: string;
-    image: string;
-    alt?: string;
-}
+import { ImageData } from '~/datas/type';
 
 const props = defineProps({
     datas: {
@@ -44,7 +38,7 @@ const imageClasses = computed(() => {
                 {{ data.headline }}
             </p>
         
-            <p v-if="data.description" class="mt-1 max-w-sm text-sm text-gray-700">
+            <p v-if="data.description" class="mt-1 max-w-sm text-sm tracking-wide text-gray-700">
                 {{ data.description }}
             </p>
         </div>

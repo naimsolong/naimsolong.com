@@ -7,11 +7,22 @@ const props = defineProps({
 })
 
 const classes = computed(() => {
+    let alignment = ''
+
+    if(props.text_align === 'center') {
+        alignment = 'md:text-center'
+    } else if(props.text_align === 'right') {
+        alignment = 'md:text-right'
+    } else if(props.text_align === 'left') {
+        alignment = 'md:text-left'
+    }
+
     return [
         'my-6',
+        'text-justify',
         'text-lg',
         'tracking-wide',
-        'text-' + props.text_align,
+        alignment,
     ]
 })
 </script>

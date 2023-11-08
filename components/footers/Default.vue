@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const config = useRuntimeConfig()
+import { profile, socials } from '~/datas/root'
 
 let currentYear = new Date().getFullYear();
 </script>
@@ -7,13 +7,11 @@ let currentYear = new Date().getFullYear();
 <template>
     <footer class="text-xs font-semibold text-gray-500 pt-5 pb-10 grid gap-3 sm:grid-cols-2">
         <div class="order-2 sm:order-1 ">
-            © 2019 - {{ currentYear }} — <a class="hover:text-gray-500" href="/">Amirul Naim Mohd Solong</a>
+            © 2019 - {{ currentYear }} — <a class="hover:text-gray-500" href="/">{{ profile.username }}</a>
         </div>
         <div class="order-1 sm:order-2">
             <ul class="flex sm:justify-end gap-5">
-                <li><a class="hover:text-gray-500" :href="config.footer.social.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a class="hover:text-gray-500" :href="config.footer.social.twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a class="hover:text-gray-500" :href="config.footer.social.github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li v-for="social in socials"><a class="hover:text-gray-500" :href="social.link" target="_blank" rel="noopener noreferrer">{{ social.title }}</a></li>
             </ul>
         </div>
         <div class="sm:col-span-2 order-3">
