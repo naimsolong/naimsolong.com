@@ -93,8 +93,9 @@ const moduleLists = [
 
         <FontsParagraph>
             The website is consists of 10 sections which are:
-            <FontsList :lists="sectionLists" />
         </FontsParagraph>
+        
+        <FontsList :lists="sectionLists" />
 
         <FontsHeaderTwo>
             Simple Event Management System
@@ -109,8 +110,9 @@ const moduleLists = [
         <FontsParagraph>
             I'm unable to share the end result of the system's dashboard due to private and confidential.
             However the modules consists of:
-            <FontsList :lists="moduleLists" />
         </FontsParagraph>
+        
+        <FontsList :lists="moduleLists" />
 
         <FontsClosing>
             It may look old school 😅 but this is the proud work I've done back then.
