@@ -39,9 +39,9 @@ export const getSEOMeta: Object = (slug: string) => {
     return {
         author: profile.fullname,
         creator: profile.fullname,
-        title: post.headline + ' | ' + profile.username,
+        title: post.headline,
         description: post.description,
-        ogTitle: post.headline + ' | ' + profile.username,
+        ogTitle: post.headline,
         ogDescription: post.description,
         ogType: 'article',
         ogUrl: modifyFullLink(post.slug),
