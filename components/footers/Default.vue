@@ -20,6 +20,8 @@ let currentYear = new Date().getFullYear();
             <span class="font-normal"> and made with </span>
             <a class="hover:text-gray-500" href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">NuxtJS</a>
             <span class="font-normal">+</span>
+            <a class="hover:text-gray-500" href="https://flowbite.com/" target="_blank" rel="noopener noreferrer">Flowbite</a>
+            <span class="font-normal">+</span>
             <a class="hover:text-gray-500" href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">SVG Repo</a>
         </div>
     </footer>

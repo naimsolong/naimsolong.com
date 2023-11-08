@@ -6,6 +6,14 @@ export interface BaseData {
     image: string;
 }
 
+export interface PostData {
+    headline: string;
+    description: string;
+    link: string;
+    image: string;
+    alt?: string;
+}
+
 export interface ImageData {
     headline?: string;
     description?: string;
