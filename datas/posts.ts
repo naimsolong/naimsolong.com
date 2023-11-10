@@ -11,12 +11,6 @@ export const posts: Array<PostData> = [
     },
 ]
 
-export const getPost: Object = (slug: string) => {
-    return posts.filter((post) => {
-        return post.slug === slug
-    })[0]
-}
-
 export const modifyLink: string = (slug: string) => {
     return '/posts/' + slug
 }
@@ -31,6 +25,12 @@ export const modifyImageLink: string = (slug: string, file_name: string) => {
 
 export const modifyFullImageLink: string = (slug: string) => {
     return '/images/posts/'+slug+'/seo_image.jpg'
+}
+
+export const getPost: Object = (slug: string) => {
+    return posts.filter((post) => {
+        return post.slug === slug
+    })[0]
 }
 
 export const getSEOMeta: Object = (slug: string) => {
@@ -48,4 +48,11 @@ export const getSEOMeta: Object = (slug: string) => {
         ogImage: modifyFullImageLink(post.slug),
         twitterCard: 'summary_large_image',
     }
+}
+
+export const getDetails: Array<Object> = (slug: string) => {
+    return [
+        getPost(slug),
+        getSEOMeta(slug),
+    ]
 }
