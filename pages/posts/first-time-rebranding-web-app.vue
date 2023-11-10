@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { getSEOMeta, modifyImageLink } from '~/datas/posts'
+import { getDetails, modifyImageLink } from '~/datas/posts'
 
 const slug = 'first-time-rebranding-web-app'
 
-const SEOMeta = getSEOMeta(slug)
+const [ post, SEOMeta ] = getDetails(slug)
+
+useHead({
+  script: [ { async: true, src: 'https://cpwebassets.codepen.io/assets/embed/ei.js' } ]
+})
 
 useSeoMeta(SEOMeta)
 
@@ -39,7 +43,7 @@ const moduleLists = [
 <template>
     <article>
         <FontsHeaderOne>
-            {{ SEOMeta.title }}
+            {{ post.headline }}
         </FontsHeaderOne>
 
         <FontsParagraph>
@@ -97,6 +101,16 @@ const moduleLists = [
         
         <FontsList :lists="sectionLists" />
 
+        <FontsParagraph>
+            I would like to shout out to <FontsLink href="https://codepen.io/siiron">Ronny Siikaluoma</FontsLink> for this amazing responsive organization chart design.
+            He's a live saver for me as I'm struggling to find a way to display the organization chart.
+            You can check out his <FontsLink href="https://codepen.io/siiron/pen/DpJmwK">codepen</FontsLink> below.
+        </FontsParagraph>
+
+        <FontsParagraph class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="DpJmwK" data-user="siiron" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/siiron/pen/DpJmwK">Responsive Organization Chart</a> by Ronny Siikaluoma (<a href="https://codepen.io/siiron">@siiron</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+        </FontsParagraph>
+
         <FontsHeaderTwo>
             Simple Event Management System
         </FontsHeaderTwo>
@@ -115,6 +129,7 @@ const moduleLists = [
         <FontsList :lists="moduleLists" />
 
         <FontsClosing>
+            It's a great experience to handle this project on my own, it teach me how to be independent and how important is to have a good communication.
             It may look old school 😅 but this is the proud work I've done back then.
             You may check it out but note that it may have the newest version.
         </FontsClosing>

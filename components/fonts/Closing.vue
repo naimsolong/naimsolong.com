@@ -28,10 +28,13 @@ const classes = computed(() => {
 </script>
 
 <template>
+    <FontsHeaderTwo>
+        In a nutshell
+    </FontsHeaderTwo>
     <p :class="classes">
         <slot /> 
     </p>
     <p :class="classes">
-        That will be all for today. See you later!
+        See you soon!
     </p>
 </template>
