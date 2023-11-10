@@ -21,7 +21,7 @@ useSeoMeta({
       </FontsHeaderOne>
 
       <FontsParagraph>
-        I'm Amirul, a passionate web application developer in helping business growth, with 4 year plus of web development experience across multiple industries - e-commerce, human resources, point of sales - I'm still curious and love to learn new things about how tech work behind the scene.
+        Passionate web application developer in helping business growth, with 4 year plus of web development experience across multiple industries - e-commerce, human resources, point of sales - I'm still curious and love to learn new things about how tech work behind the scene.
       </FontsParagraph>
 
       <FontsParagraph>
