@@ -45,16 +45,12 @@ const moduleLists = [
         <FontsHeaderOne>
             {{ post.headline }}
         </FontsHeaderOne>
-
-        <FontsParagraph>
-            Assalamualaikum!
-        </FontsParagraph>
         
-        <FontsParagraph>
+        <FontsIntroduction>
             What interesting studying at Universiti Teknologi Malaysia (UTM), Johor Bahru campus, is that we have whole semester (6 months) doing internship at the last semester of the last year period.
             I believe this allow students absorb into work directly after intern or having enough working experience to start job hunt right after graduate.
             It also teach us this the last chance to have fun with friends before we start adulting.
-        </FontsParagraph>
+        </FontsIntroduction>
         
         <FontsParagraph>
             Luckily for me, I have some friends that also doing internship at Johor Bahru area, so I can have fun with them while stressing out with work.

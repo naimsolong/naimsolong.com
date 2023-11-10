@@ -1,11 +1,8 @@
 <template>
-    <FontsHeaderTwo>
-        In a nutshell
-    </FontsHeaderTwo>
     <FontsParagraph>
-        <slot /> 
+        Assalamualaikum.
     </FontsParagraph>
     <FontsParagraph>
-        See you soon!
+        <slot /> 
     </FontsParagraph>
 </template>

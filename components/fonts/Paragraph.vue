@@ -7,19 +7,18 @@ const props = defineProps({
 })
 
 const classes = computed(() => {
-    let alignment = ''
+    let alignment = 'text-justify'
 
     if(props.text_align === 'center') {
-        alignment = 'md:text-center'
+        alignment = 'text-center'
     } else if(props.text_align === 'right') {
-        alignment = 'md:text-right'
+        alignment = 'text-right'
     } else if(props.text_align === 'left') {
-        alignment = 'md:text-left'
+        alignment = 'text-left'
     }
 
     return [
         'my-6',
-        'text-justify',
         'text-lg',
         'tracking-wide',
         alignment,

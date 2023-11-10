@@ -10,6 +10,17 @@ const props = defineProps({
         type: String,
         default: 'small',
     },
+    spacing: {
+        type: Boolean,
+        default: false,
+    },
+})
+
+const spacingClasses = computed(() => {
+    return [
+        'px-1',
+        props.spacing ? 'mx-auto' : ''
+    ]
 })
 
 const imageClasses = computed(() => {
@@ -25,8 +36,8 @@ const imageClasses = computed(() => {
 </script>
 
 <template>
-    <div class="flex flex-wrap items-center w-full text-center">
-        <div class="px-1 mx-auto" v-for="data in props.datas">
+    <div class="flex flex-wrap justify-center w-full text-center">
+        <div :class="spacingClasses" v-for="data in props.datas">
             <a :href="data.link ?? '#'" :target="data.link ? '_blank' : ''" :disabled="data.link == null" rel="noopener noreferrer">
                 <img
                 :alt="data.alt ?? 'Images for ' + data.image"

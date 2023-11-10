@@ -1,5 +1,17 @@
 <script setup lang="ts">
+import { profile } from '~/datas/root'
 import { posts } from '~/datas/posts'
+
+useSeoMeta({
+  author: profile.fullname,
+  creator: profile.fullname,
+  title: 'Posts | naimsolong',
+  description: 'Sharing my knowledge and updates about my career progress in articles and journals.',
+  ogTitle: 'Posts | naimsolong',
+  ogDescription: 'Sharing my knowledge and updates about my career progress in articles and journals.',
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>

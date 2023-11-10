@@ -11,7 +11,7 @@ export const profile: BaseData = {
 export const offers: Array<ImageData> = [
     {
         headline: 'Web Development',
-        description: 'Front-to-back-end development ',
+        description: 'Front-to-back-end development',
         image: 'images/skills/web-svgrepo-com.svg',
         alt: 'Web Development',
     },
@@ -77,8 +77,16 @@ export const stacks: Array<ImageData> = [
         link: 'https://www.nginx.com',
     },
     {
+        image: '/images/stacks/tech-docker.png',
+        link: 'https://docker.com',
+    },
+    {
         image: '/images/stacks/tech-runcloud.png',
         link: 'https://runcloud.io',
+    },
+    {
+        image: '/images/stacks/tech-vapor.png',
+        link: 'https://vapor.laravel.com',
     },
 ]
 

@@ -1,7 +1,16 @@
 <script setup lang="ts">
+import { profile, offers, stacks } from '~/datas/root'
 
-import { offers, stacks } from '~/datas/root'
-
+useSeoMeta({
+  author: profile.fullname,
+  creator: profile.fullname,
+  title: 'Full-Stack Laravel Developer | naimsolong',
+  description: 'A passionate web application developer in helping business growth.',
+  ogTitle: 'Full-Stack Laravel Developer | naimsolong',
+  ogDescription: 'A passionate web application developer in helping business growth.',
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>
@@ -29,7 +38,7 @@ import { offers, stacks } from '~/datas/root'
         What Do I Offer
       </FontsHeaderTwo>
 
-      <SectionsImages :datas="offers" size="large"/>
+      <SectionsImages :datas="offers" :spacing="true" size="large"/>
     </SectionsSpacing>
 
     <hr>
