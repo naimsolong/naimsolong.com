@@ -23,6 +23,9 @@ jobs:
         env:
           NITRO_PRESET: github_pages
 
+      # Copy CNAME file
+      - run: cp ./CNAME ./.output/public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
