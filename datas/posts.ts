@@ -9,6 +9,13 @@ export const posts: Array<PostData> = [
         image: '',
         alt: '',
     },
+    {
+        headline: 'Avoid These Laravel Upgrade Mistakes',
+        description: 'Tips on how to safely and efficiently upgrade an out-of-date Laravel app',
+        slug: 'avoid-these-laravel-upgrade-mistakes',
+        image: '',
+        alt: '',
+    },
 ]
 
 export const modifyLink: string = (slug: string) => {
