@@ -14,6 +14,14 @@ export interface PostData {
     alt?: string;
 }
 
+export interface ProjectData {
+    headline: string;
+    description: string;
+    slug: string;
+    image: string;
+    alt?: string;
+}
+
 export interface ImageData {
     headline?: string;
     description?: string;

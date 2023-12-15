@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { getDetails, modifyImageLink } from '~/datas/posts'
+import { posts } from '~/datas/posts'
+import { getDetails, modifyImageLink } from '~/datas/functions'
 
 const slug = 'first-time-rebranding-web-app'
 
-const [ post, SEOMeta ] = getDetails(slug)
+const [ post, SEOMeta ] = getDetails(posts, 'posts', slug)
 
 useHead({
   script: [ { async: true, src: 'https://cpwebassets.codepen.io/assets/embed/ei.js' } ]
@@ -13,7 +14,7 @@ useSeoMeta(SEOMeta)
 
 const images = [
     {
-        image: modifyImageLink(slug, '/pic-website.png'),
+        image: modifyImageLink('posts', slug, '/pic-website.png'),
         alt: 'Rebranded website',
     },
 ]

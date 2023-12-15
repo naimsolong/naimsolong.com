@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { getDetails, modifyImageLink } from '~/datas/posts'
+import { posts } from '~/datas/posts'
+import { getDetails } from '~/datas/functions'
 
 const slug = 'avoid-these-laravel-upgrade-mistakes'
 
-const [ post, SEOMeta ] = getDetails(slug)
+const [ post, SEOMeta ] = getDetails(posts, 'posts', slug)
 
 useSeoMeta(SEOMeta)
 </script>

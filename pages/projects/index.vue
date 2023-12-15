@@ -14,5 +14,13 @@ useSeoMeta({
 </script>
 
 <template>
-    Projects index
+  <FontsHeaderOne>
+    Projects
+  </FontsHeaderOne>
+
+  <FontsParagraph>
+    Ongoing and past interesting projects that I have worked on.
+  </FontsParagraph>
+
+  Projects index
 </template>

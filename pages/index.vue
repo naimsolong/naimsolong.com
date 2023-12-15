@@ -4,9 +4,9 @@ import { profile, offers, stacks } from '~/datas/root'
 useSeoMeta({
   author: profile.fullname,
   creator: profile.fullname,
-  title: 'Full-Stack Laravel Developer | naimsolong',
+  title: 'Laravel Developer | naimsolong',
   description: 'A passionate web application developer in helping business growth.',
-  ogTitle: 'Full-Stack Laravel Developer | naimsolong',
+  ogTitle: 'Laravel Developer | naimsolong',
   ogDescription: 'A passionate web application developer in helping business growth.',
   ogType: 'article',
   twitterCard: 'summary_large_image',
