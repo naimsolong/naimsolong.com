@@ -1,6 +1,8 @@
 import { profile } from './root';
 import { PostData } from './type';
 
+const config = useRuntimeConfig()
+
 export const posts: Array<PostData> = [
     {
         headline: 'First Time Rebranding Web App',
@@ -51,8 +53,8 @@ export const getSEOMeta: Object = (slug: string) => {
         ogTitle: post.headline,
         ogDescription: post.description,
         ogType: 'article',
-        ogUrl: modifyFullLink(post.slug),
-        ogImage: modifyFullImageLink(post.slug),
+        ogUrl: config.public.app_url+modifyFullLink(post.slug),
+        ogImage: config.public.app_url+modifyFullImageLink(post.slug),
         twitterCard: 'summary_large_image',
     }
 }

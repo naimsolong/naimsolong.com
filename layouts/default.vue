@@ -1,10 +1,19 @@
 <script setup lang="ts">
+const route = useRoute()
+const config = useRuntimeConfig()
+
 useHead({
     bodyAttrs: {
         class: computed(() => {
             return 'max-w-screen-lg px-10 md:px-6 mx-auto';
         }),
     },
+    link: [
+        {
+            rel: 'canonical',
+            href: config.public.app_url+route.path,
+        },
+    ],
 });
 </script>
 
