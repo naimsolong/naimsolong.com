@@ -5,7 +5,7 @@ export const profile: BaseData = {
     shortname: 'Amirul Naim',
     username: 'naimsolong',
     name: 'Amirul',
-    image: '/images/profiles/starlink.jpg',
+    image: '/images/profiles/notion-avatar.png',
 }
 
 export const offers: Array<ImageData> = [
