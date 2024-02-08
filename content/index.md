@@ -1,8 +1,9 @@
 ---
-  title: 'Laravel Developer | naimsolong'
-  description: 'A passionate web application developer in helping business growth.'
-  image: ''
-  published: '2024-01-01'
+title: 'Laravel Developer | naimsolong'
+description: 'A passionate web application developer in helping business growth.'
+image: ''
+navigation: false
+published: '2024-01-01'
 ---
 
 ::Spacing

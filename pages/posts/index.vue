@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { profile } from '~/datas/root'
-import { posts } from '~/datas/posts'
+const posts = await queryContent('posts').only(['id', 'title', 'description', 'image', '_path']).sort({ published: -1 }).limit(50).find()
 
 useSeoMeta({
   author: profile.fullname,
@@ -24,6 +24,6 @@ useSeoMeta({
   </FontsParagraph>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center w-full">
-      <SectionsCard v-for="post in posts" :post="post" />
+    <SectionsCard v-for="post in posts" :post="post" />
   </div>
 </template>

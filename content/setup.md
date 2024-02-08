@@ -1,8 +1,9 @@
 ---
-  title: 'Setup | naimsolong'
-  description: 'Local development setup.'
-  image: ''
-  published: '2024-01-01'
+title: 'Setup | naimsolong'
+description: 'Local development setup.'
+image: ''
+navigation: false
+published: '2024-01-01'
 ---
 
 ::Spacing
@@ -11,7 +12,7 @@
   My personal preference of software and hardware that I use to build software.
 
   <hr/>
-  
+
   ## Workstation
 
   I'm currently using whatever laptop that my company provide, which is HP Laptop 14-inch with following specs:
