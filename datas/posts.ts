@@ -1,4 +1,4 @@
-import { PostData } from './type';
+import type { PostData } from './type';
 
 export const posts: Array<PostData> = [
     {

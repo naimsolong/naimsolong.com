@@ -2,11 +2,13 @@
 const props = defineProps({
     href: {
         type: String,
-        required: true,
+        default: '',
+        required: true
     },
     target: {
         type: String,
         default: '_blank',
+        required: false
     },
     rel: {
         type: String,
