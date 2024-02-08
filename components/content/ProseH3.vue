@@ -8,10 +8,9 @@
 </script>
   
   <template>
-    <h3 :id="id">
+    <h3 class="text-xl font-extrabold mt-10 mb-5 tracking-wider" :id="id">
         <a
             v-if="id && generate"
-            class="text-xl font-extrabold mt-10 mb-5 tracking-wider"
             :href="`#${id}`"
         >
             <slot />
