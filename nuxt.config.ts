@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   ssr: false,
   runtimeConfig: {
+    posthog_key: process.env.POSTHOG_KEY,
+    posthog_host: process.env.POSTHOG_HOST,
     public: {
       app_url: 'https://naimsolong.com',
     }
