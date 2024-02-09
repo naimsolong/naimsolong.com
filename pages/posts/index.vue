@@ -24,6 +24,7 @@ useSeoMeta({
   </FontsParagraph>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center w-full">
-    <SectionsCard v-for="post in posts" :post="post" />
+    <SectionsCard v-if="posts.length > 0" v-for="post in posts" :post="post" />
+    <span v-else>Coming soon...</span>
   </div>
 </template>
