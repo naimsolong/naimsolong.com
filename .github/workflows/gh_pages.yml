@@ -19,9 +19,7 @@ jobs:
 
       # Pick your own package manager and generate script
       - run: npm install
-      - run: npm run generate
-        env:
-          NITRO_PRESET: github_pages
+      - run: npx nuxt build --preset github_pages
 
       # Copy CNAME file
       - run: cp ./CNAME ./.output/public
