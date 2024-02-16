@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
+import { PostHog } from 'posthog-node';
 import { profile } from '~/datas/root'
 const projects = await queryContent('projects').only(['id', 'title', 'description', 'image', '_path']).sort({ published: -1 }).limit(50).find()
 
@@ -12,6 +14,29 @@ useSeoMeta({
   ogType: 'article',
   twitterCard: 'summary_large_image',
 })
+
+const { data: someData, error } = await useAsyncData('ctaText', async () => {
+  const runtimeConfig = useRuntimeConfig();
+  console.log(runtimeConfig)
+  
+  const posthog = new PostHog(
+    runtimeConfig.public.posthog_key,
+    { host: runtimeConfig.public.posthog_host || 'https://app.posthog.com' }
+  );
+
+  try {
+    const distinctId = `ph_${runtimeConfig.public.posthog_key}_posthog`; // or you can use your user's email, for example.
+    posthog.capture({
+      distinctId: distinctId,
+      event: 'project_index_page"',
+    })
+    await posthog.shutdownAsync()
+  } catch (error) {
+    // console.log(error);
+  }
+
+  return "Some data";
+});
 </script>
 
 <template>

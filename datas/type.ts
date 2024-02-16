@@ -1,4 +1,4 @@
-export interface BaseData {
+export default interface BaseData {
     fullname: string;
     shortname: string;
     username: string;
@@ -6,7 +6,7 @@ export interface BaseData {
     image: string;
 }
 
-export interface PostData {
+export default interface PostData {
     headline: string;
     description: string;
     slug: string;
@@ -14,7 +14,7 @@ export interface PostData {
     alt?: string;
 }
 
-export interface ProjectData {
+export default interface ProjectData {
     headline: string;
     description: string;
     slug: string;
@@ -22,7 +22,7 @@ export interface ProjectData {
     alt?: string;
 }
 
-export interface ImageData {
+export default interface ImageData {
     headline?: string;
     description?: string;
     link?: string;
@@ -30,7 +30,7 @@ export interface ImageData {
     alt?: string;
 }
 
-export interface SocialData {
+export default interface SocialData {
     title: string;
     link: string;
 }
