@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
-    posthog_key: process.env.POSTHOG_KEY,
-    posthog_host: process.env.POSTHOG_HOST,
     public: {
+      posthog_key: process.env.POSTHOG_KEY,
+      posthog_host: process.env.POSTHOG_HOST,
       app_url: 'https://naimsolong.com',
     }
   },
@@ -17,9 +17,9 @@ export default defineNuxtConfig({
     }
   },
   devtools: {
-    enabled: true,
+    enabled: false,
     timeline: {
-      enabled: true
+      enabled: false
     }
   },
   modules: [

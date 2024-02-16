@@ -1,6 +1,7 @@
 ---
 title: 'Laravel Developer | naimsolong'
 description: 'A passionate web application developer in helping business growth.'
+event: 'landing_page'
 image: ''
 navigation: false
 published: '2024-01-01'

@@ -1,6 +1,7 @@
 ---
 title: 'Awesome Blog for Laravel Developer to follow'
 description: 'Most favourite blog must follow for Laravel Developer'
+event: 'awesome_blog_for_laravel_developer_to_follow'
 image: ''
 draft: true
 published: '2024-03-14'
