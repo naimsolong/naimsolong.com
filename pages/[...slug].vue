@@ -2,10 +2,10 @@
 import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
 import { PostHog } from 'posthog-node';
 
-const { data: someData, error } = await useAsyncData('home', async () => {
-  const { page } = await useAsyncData('query', () => queryContent($route.path).findOne())
 
+const { data: someData, error } = await useAsyncData('home', async (event) => {
   const runtimeConfig = useRuntimeConfig();
+  // const { page } = queryContent($route.path).findOne()
   
   const posthog = new PostHog(
     runtimeConfig.public.posthog_key,
@@ -13,10 +13,10 @@ const { data: someData, error } = await useAsyncData('home', async () => {
   );
 
   try {
-    const distinctId = `ph_${runtimeConfig.public.posthog_key}_posthog`; // or you can use your user's email, for example.
+    const distinctId = `ph_posthog`; // or you can use your user's email, for example.
     posthog.capture({
       distinctId: distinctId,
-      event: page.event || $route.path,
+      event: event.payload.path,
     })
     await posthog.shutdownAsync()
   } catch (error) {
@@ -31,6 +31,7 @@ const { data: someData, error } = await useAsyncData('home', async () => {
   <main>
     <ContentDoc :path="$route.path">
       <template v-slot="{ doc }">
+        {{ page }}
         <ContentRenderer :value="doc" />
       </template>
       <template #not-found>
