@@ -15,7 +15,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-const { data: someData, error } = await useAsyncData('ctaText', async () => {
+const { data: someData, error } = await useAsyncData('ctaText', async (event) => {
   const runtimeConfig = useRuntimeConfig();
   console.log(runtimeConfig)
   
@@ -25,10 +25,10 @@ const { data: someData, error } = await useAsyncData('ctaText', async () => {
   );
 
   try {
-    const distinctId = `ph_${runtimeConfig.public.posthog_key}_posthog`; // or you can use your user's email, for example.
+    const distinctId = `ph_posthog`; // or you can use your user's email, for example.
     posthog.capture({
       distinctId: distinctId,
-      event: 'post_index_page"',
+      event: event.payload.path,
     })
     await posthog.shutdownAsync()
   } catch (error) {
