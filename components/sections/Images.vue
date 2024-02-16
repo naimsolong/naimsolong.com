@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ImageData } from '~/datas/type';
+import type { ImageData } from '~/datas/type';
 
 const props = defineProps({
     datas: {

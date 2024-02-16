@@ -1,4 +1,4 @@
-import { BaseData, ImageData, SocialData } from './type';
+import type { BaseData, ImageData, SocialData } from './type';
 
 export const profile: BaseData = {
     fullname: 'Amirul Naim Mohd Solong',

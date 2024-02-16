@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   runtimeConfig: {
     posthog_key: process.env.POSTHOG_KEY,
     posthog_host: process.env.POSTHOG_HOST,
@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    '@nuxt/content',
     '@nuxtjs/tailwindcss'
   ]
 })

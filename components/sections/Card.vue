@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { modifyLink } from '~/datas/functions';
-
 const props = defineProps({
     post: {
         type: Object,
@@ -11,11 +9,11 @@ const props = defineProps({
 
 <template>
     <div class="bg-white border border-ray-200 rounded-lg">
-        <a :href="modifyLink('posts', props.post.slug)">
+        <a :href="props.post._path">
             <img v-if="props.post.image && props.post.image != ''" class="rounded-t-lg" :src="props.post.image" :alt="props.post.alt ?? 'Images'" />
             <div class="flex flex-col justify-between p-5 h-full">
                 <span>
-                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900">{{ props.post.headline }}</h5>
+                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900">{{ props.post.title }}</h5>
                     <p class="mb-3 font-normal text-gray-700">{{ props.post.description }}</p>
                 </span>
                 <span class="inline-flex pt-3 items-center text-sm font-medium text-center border-t-2 border-ray-200">
