@@ -1,6 +1,11 @@
 # https://github.com/actions/deploy-pages#usage
 name: Deploy to GitHub Pages
 
+env:
+  # set env
+  POSTHOG_HOST: ${{ vars.POSTHOG_HOST }}
+  POSTHOG_KEY: ${{ vars.POSTHOG_KEY }}
+
 on:
   workflow_dispatch:
   push:
