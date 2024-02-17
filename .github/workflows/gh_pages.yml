@@ -52,6 +52,9 @@ jobs:
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
+      - name: check env
+        run: echo "test print $POSTHOG_HOST"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
