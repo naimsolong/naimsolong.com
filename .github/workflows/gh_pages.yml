@@ -30,6 +30,9 @@ jobs:
       # Pick your own package manager and generate script
       - run: npm install
       - run: npx nuxt build --preset github_pages
+        env:
+          POSTHOG_HOST : ${{ vars.POSTHOG_HOST }}
+          POSTHOG_KEY : ${{ vars.POSTHOG_KEY }}
 
       # Copy CNAME file
       - run: cp ./CNAME ./.output/public
