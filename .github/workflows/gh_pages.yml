@@ -29,6 +29,7 @@ jobs:
         with:
           envkey_POSTHOG_HOST: $POSTHOG_HOST
           envkey_POSTHOG_KEY: $POSTHOG_KEY
+          directory: /.output/public
 
       # Pick your own package manager and generate script
       - run: npm install
