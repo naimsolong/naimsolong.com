@@ -22,6 +22,11 @@ jobs:
         with:
           node-version: "20"
 
+      - uses: SpicyPizza/create-envfile@v2.0
+        with:
+          envkey_POSTHOG_HOST: $POSTHOG_HOST
+          envkey_POSTHOG_KEY: $POSTHOG_KEY
+
       # Pick your own package manager and generate script
       - run: npm install
       - run: npx nuxt build --preset github_pages
