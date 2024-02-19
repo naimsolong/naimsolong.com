@@ -2,7 +2,7 @@
 import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
 import { PostHog } from 'posthog-node';
 import { profile } from '~/datas/root'
-const posts = await queryContent('posts').only(['id', 'title', 'description', 'image', '_path']).where({ draft: false }).sort({ published: -1 }).limit(50).find()
+const posts = await queryContent('posts').only(['id', 'title', 'description', 'image', '_path']).sort({ published: -1 }).limit(50).find()
 
 useSeoMeta({
   author: profile.fullname,
@@ -47,7 +47,7 @@ const { data: someData, error } = await useAsyncData('ctaText', async (event) =>
   <FontsParagraph>
     Sharing my knowledge and updates about my career progress in articles and journals.
   </FontsParagraph>
-
+  {{ posts }}
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center w-full">
     <SectionsCard v-if="posts.length > 0" v-for="post in posts" :post="post" />
     <span v-else>Coming soon...</span>
