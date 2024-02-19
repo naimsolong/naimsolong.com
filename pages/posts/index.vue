@@ -2,7 +2,7 @@
 import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
 import { PostHog } from 'posthog-node';
 import { profile } from '~/datas/root'
-const posts = await queryContent('posts').only(['id', 'title', 'description', 'image', '_path']).where({ draft: false }).sort({ published: -1 }).limit(50).find()
+const posts = await queryContent('posts').only(['id', 'title', 'description', 'image', 'draft', '_path']).where({ draft: false }).sort({ published: -1 }).limit(50).find()
 
 useSeoMeta({
   author: profile.fullname,

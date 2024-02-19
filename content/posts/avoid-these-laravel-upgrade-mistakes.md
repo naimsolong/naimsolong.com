@@ -3,6 +3,7 @@ title: 'Avoid These Laravel Upgrade Mistakes'
 description: 'Tips on how to safely and efficiently upgrade an out-of-date Laravel app'
 event: 'avoid_these_laravel_upgrade_mistakes'
 image: ''
+draft: false
 published: '2024-01-14'
 ---
 
