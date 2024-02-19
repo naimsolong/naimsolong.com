@@ -47,7 +47,7 @@ const { data: someData, error } = await useAsyncData('ctaText', async (event) =>
   <FontsParagraph>
     Sharing my knowledge and updates about my career progress in articles and journals.
   </FontsParagraph>
-  {{ posts }}
+
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center w-full">
     <SectionsCard v-if="posts.length > 0" v-for="post in posts" :post="post" />
     <span v-else>Coming soon...</span>
