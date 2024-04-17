@@ -16,18 +16,22 @@ published: '2024-01-01'
 
   ## Workstation
 
-  I'm currently using whatever laptop that my company provide, which is HP Laptop 14-inch with following specs:
+  I'm currently using laptop that my company provide and this time, I got my chances to have Macbook M3 Pro! (in which for me is expensive 💸🤣)
 
-  - Intel Core i7-1355U
-  - 16GB SDRAM
+  - Apple M3 chip
+  - 16GB memory
   - 500GB SSD
-  - Windows 11 Home
+  - Sonoma macOS
   
-  I've been a Windows for over a decade and it has been a great experience, but I'm planning to switch to Macbook Pro in the future.
+  I've been a Windows in my entire life and with this, it will be a great opportunity to compare both Windows and Mac in term of developer experience.
 
   ## Integrated Development Environment (IDE)
 
   I use [Visual Studio Code](https://code.visualstudio.com) as my main IDE for web development. It's free, open-source, and cross-platform, working on Windows, Linux, and macOS, and it has an in-built debugger. Plus, it has extension marketplace where it support hundreds of programming language and provide a robust tools. A simple extension named [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) help automatically add close tag and it increase my productivity
+
+  ## Debugging tools
+
+  Tinkerwell and Spatie Ray
 
   ## Terminal
 
@@ -36,6 +40,8 @@ published: '2024-01-01'
   Eventhough, it's free version only limited 12 sessions and 2 SSH Tunnels, this will be enough for me as I only use it for my local.
   
   ## Development
+
+  Laravel
 
   I have love-hate relationship with [Docker](https://docker.com). It does allow for easy deployment and development across multiple platforms, but it consume a lot of resources in my laptop.
 
