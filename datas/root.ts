@@ -35,11 +35,22 @@ export const offers: Array<ImageData> = [
     },
 ]
 
-export const stacks: Array<ImageData> = [
+const backend_stack: Array<ImageData> = [
     {
         image: '/images/stacks/tech-laravel.png',
         link: 'https://laravel.com',
     },
+    {
+        image: '/images/stacks/tech-pest.png',
+        link: 'https://pestphp.com',
+    },
+    {
+        image: '/images/stacks/tech-mysql.png',
+        link: 'https://www.mysql.com',
+    },
+]
+
+const frontend_stack: Array<ImageData> = [
     {
         image: '/images/stacks/tech-inertiajs.png',
         link: 'https://inertiajs.com',
@@ -56,14 +67,9 @@ export const stacks: Array<ImageData> = [
         image: '/images/stacks/tech-tailwindcss.png',
         link: 'https://tailwindcss.com',
     },
-    {
-        image: '/images/stacks/tech-pest.png',
-        link: 'https://pestphp.com',
-    },
-    {
-        image: '/images/stacks/tech-mysql.png',
-        link: 'https://www.mysql.com',
-    },
+]
+
+const devops_stack: Array<ImageData> = [
     {
         image: '/images/stacks/tech-aws.png',
         link: 'https://aws.amazon.com',
@@ -89,6 +95,12 @@ export const stacks: Array<ImageData> = [
         link: 'https://vapor.laravel.com',
     },
 ]
+
+export const stacks: Object =  {
+    backend: backend_stack,
+    frontend: frontend_stack,
+    devops: devops_stack,
+}
 
 export const socials: Array<SocialData> = [
     {
