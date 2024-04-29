@@ -9,7 +9,7 @@ published: '2024-01-14'
 
 # Avoid These Laravel Upgrade Mistakes
 
-Assalamualaikum
+Assalamualaikum.
 
 New features requirements keep coming in but doesn't have time for optimization and our code becoming a legacy eventually. It is important to follow framework upgrade so that our code will be regularly update too, even though it is time consuming, costly and risky.
 
