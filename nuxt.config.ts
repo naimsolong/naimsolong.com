@@ -16,6 +16,16 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     }
   },
+  content: {
+    highlight: {
+      theme: 'github-light',
+      langs: [
+        'bash',
+        'php',
+        'javascript'
+      ]
+    }
+  },
   devtools: {
     enabled: false,
     timeline: {
