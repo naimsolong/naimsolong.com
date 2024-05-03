@@ -3,7 +3,7 @@ title: 'Globalisation Proof of Concept'
 description: 'Proof of Concept to Globalisation Project using Laravel Framework'
 event: 'globalisation_proof_of_concept'
 image: ''
-draft: false
+draft: true
 published: '2024-04-30'
 ---
 
@@ -38,7 +38,7 @@ Let's create a `Core` folder inside `app` folder where we can distiguish service
 
 ### Service Class
 
-For now we have all services class for two region Malaysia (MY) and Philippines (PH) with a base core services class. Each region services class will enherite base core services class. Take `OrderService` class as example and we have service tax to calculate from total price of order.
+For now we have all services class for two region Malaysia (MY) and Philippines (PH) with a base core services class. Each region services class will enherite base core services class. Take `OrderService` class as example and we have service tax to calculate from total price of order. By default, the tax we gonna assume is none, the value will be 1.
 
 File: `app\Core\Services\Base\OrderService.php`
 ```php
@@ -58,6 +58,8 @@ class OrderService {
 	}
 }
 ```
+
+However, for Malaysia and Philippines taxes are 6% and 5% respectively. The numbers are not actual but just an example only.
 
 File: `app\Core\Services\MY\OrderService.php`
 ```php
@@ -89,7 +91,7 @@ final class OrderService extends BaseManager {
 
 ### Facades
 
-Create a new facade for OrderService class so that we can makes use of the static magic-method to defer calls from this facade to an object resolved from the container. We name this facade as '<b>Core.OrderService</b>'
+Create a new facade for `OrderService` class so that we can makes use of the static magic-method to defer calls from this facade to an object resolved from the container. We name this facade accessor as '<b>Core.OrderService</b>'.
 
 File: `app\Core\Facades\OrderService.php`
 ```php
@@ -108,7 +110,7 @@ class OrderService extends Facade
 
 ### Service Provider
 
-When we want to use any static method on the OrderService facade, Laravel resolves the cache binding from the service container and runs the requested method. From here we bind the OrderService facade to different region service class based on `COUNTRY` environment variable. If no country is defined then it will throw `Exception`.
+When we want to use any static method on the `OrderService` facade, Laravel resolves the cache binding from the service container and runs the requested method. From here we bind the `OrderService` facade to different region service class based on `COUNTRY` environment variable. If no country is defined then it will throw `Exception`.
 
 
 File: `app\Providers\CoreServiceProvider.php`
@@ -151,13 +153,13 @@ OrderManager::grandTotal(10);
 \\ Malaysia region where we set `COUNTRY=MY` in `.env` file
 6
 
-\\ Malaysia region where we set `COUNTRY=PH` in `.env` file
+\\ Philippines region where we set `COUNTRY=PH` in `.env` file
 5
 ```
 
 In a nutshell.
 
-This concept really rely heavily on services class. One of my colleague advice that these configuration such as tax amount should be store in database, I think that would be great concept. What do you think?
+If the business logic is the same across region we can put it inside base service class, but only add different configuration or logic inside region service class and this concept rely heavily on services class file. One of my colleague advice that these configuration such as tax amount should be store in database then we cache it, I think that would be great too. What do you think? 
 
 See you soon!
 
