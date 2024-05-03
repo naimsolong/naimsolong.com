@@ -3,7 +3,7 @@ title: 'Globalisation Proof of Concept'
 description: 'Proof of Concept to Globalisation Project using Laravel Framework'
 event: 'globalisation_proof_of_concept'
 image: ''
-draft: true
+draft: false
 published: '2024-04-30'
 ---
 
