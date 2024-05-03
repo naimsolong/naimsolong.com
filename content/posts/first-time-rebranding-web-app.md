@@ -57,7 +57,7 @@ I'm unable to share the end result of the system's dashboard due to private and 
 - Users manageme = Allow user to add, edit and remove other users
 - Event manageme = Allow user to add, edit remove, view (past & inactive) event
 
-In a nutshell
+In a nutshell.
 
 It's a great experience to handle this project on my own, it teach me how to be independent and how important is to have a good communication. It may look old school 😅 but this is the proud work I've done back then. You may check it out but note that it may have the newest version.
 

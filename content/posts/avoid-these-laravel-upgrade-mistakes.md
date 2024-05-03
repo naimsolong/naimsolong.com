@@ -37,7 +37,7 @@ The second mistake is jumping directly to a major version upgrade without consid
 
 Another common mistake after Laravel upgrade is overlooking or ignoring unknown error messages. These error messages are not merely obstacles to be ignored; they might be an important indicators of upgrade issues that need to be resolve. Simply bypassing these error messages could result in more serious issues down the line, and could potentially lead to unstable or even unusable.
 
-In a nutshell
+In a nutshell.
 
 To be a great developer is to read documentation. Even though documentation is not our forte but it's very important as this is the only communication medium that have solid and clear instructions between developer. Or can use Laravel Shift to automate upgrade process.
 
