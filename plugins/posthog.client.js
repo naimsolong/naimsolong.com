@@ -20,13 +20,13 @@ export default defineNuxtPlugin(nuxtApp => {
       });
     });
   });
-  router.beforeRouteLeave((to, from) => {
-    nextTick(() => {
-      posthog.capture('$pageleave', {
-        current_url: to.fullPath
-      });
-    });
-  });
+//   router.beforeRouteLeave((to, from) => {
+//     nextTick(() => {
+//       posthog.capture('$pageleave', {
+//         current_url: to.fullPath
+//       });
+//     });
+//   });
 
   return {
     provide: {
