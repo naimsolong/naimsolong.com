@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
     public: {
+      cloudflare_analytic_token: process.env.CLOUDFLARE_ANALYTIC_TOKEN,
       posthog_key: process.env.POSTHOG_KEY,
       posthog_host: process.env.POSTHOG_HOST,
       app_url: 'https://naimsolong.com',
