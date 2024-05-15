@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
 import { profile } from '~/datas/root'
 const { $posthog } = useNuxtApp()
@@ -27,7 +27,7 @@ const { data: someData, error } = await useAsyncData('home', async (event) => {
 
       posthog.capture({
         distinctId: distinctId,
-        event: 'project_index',
+        // event: 'project_index',
       })
       await posthog.shutdownAsync()
     } catch (error) {

@@ -12,7 +12,7 @@ const { data: someData, error } = await useAsyncData('home', async (event) => {
       const distinctId = `ph_posthog`; // or you can use your user's email, for example.
 
       posthog.capture({
-        distinctId: distinctId,
+        // distinctId: distinctId,
         event: event.payload.path,
       })
       await posthog.shutdownAsync()
