@@ -8,7 +8,7 @@ const posts = await queryContent('posts')
               .where({
                 draft: false,
                 published: {
-                  $lte: moment().format('Y-m-d')
+                  $lte: moment().format('YYYY-MM-DD')
                 }
               })
               .sort({ published: -1 })
