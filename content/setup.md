@@ -4,7 +4,7 @@ description: "Local development setup."
 event: "setup_page"
 image: ""
 navigation: false
-published: "2024-01-01"
+published: ''
 ---
 
 ::Spacing

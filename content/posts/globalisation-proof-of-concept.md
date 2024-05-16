@@ -7,8 +7,6 @@ draft: false
 published: '2024-04-30'
 ---
 
-# Globalisation Proof of Concept
-
 Assalamualaikum.
 
 Globalisation is a term used to describe to increase services across region, or you can say it as international expansion project. Region can be multiple country where we want to deploy. Let's implement this on [Laravel Framework](https://laravel.com/) where we gonna fully utilise [Facades](https://laravel.com/docs/11.x/facades) and environment file to distiguish region.

@@ -33,8 +33,5 @@ export default defineNuxtConfig({
       enabled: false
     }
   },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss'
-  ]
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', "@nuxt/image"]
 })
