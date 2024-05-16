@@ -5,7 +5,7 @@
         :alt="alt"
         :width="width"
         :height="height"
-        class="object-cover lg:w-1/2 md:w-3/4 mx-auto"
+        class="object-cover lg:w-1/2 md:w-3/4 my-6 mx-auto"
     />
 </template>
   
