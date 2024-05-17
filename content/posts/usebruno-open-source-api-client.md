@@ -3,8 +3,8 @@ title: 'Bruno: Open Source API Client'
 description: 'A lightweight API client alternative to Postman'
 event: 'usebruno_open_source_api_client'
 image: ''
-draft: true
-published: '2024-05-30'
+draft: false
+published: '2024-05-18'
 ---
 
 Assalamualaikum!
@@ -19,7 +19,7 @@ It feels like a normal API client like Postman BUT with privacy and super power!
 
 ### 1. The `.bru` file
 
-With Bruno it came with `.bru` extension file so we can edit API collection directly in your preferred code editor. As you can see example below, there's a few format in order to create an API request to get list of addresses; meta, request, auth, assert and tests.
+With Bruno it came with `.bru` extension file so we can edit API collection directly in preferred code editor. As we can see example below, there's a few format in order to create an API request to get list of addresses; meta, request, auth, assert and tests.
 
 ![Dot bru file introduction](/images/posts/bruno-bru-dot-file.png)
 
@@ -49,12 +49,12 @@ get {
 }
 ```
 
-Another format is **get** and this is actually the HTTP method, you can change it to supported HTTP method such as **post**, **patch** or **delete**. This part consist of:
+Another format is **get** and this is actually the HTTP method, we can change it to supported HTTP method such as **post**, **patch** or **delete**. This part consist of:
 1. url: The API url with `{{rest_url}}` is the variable we set for particular environment.
 2. body: The body of HTTP request, for this case is none.
 3. auth: Authentication for this API url as selected is bearer token, currently only support AWS Sig V4, Basic Auth, Bearer Token, Digest Auth and OAuth 2.0.
 
-If you wanna to use different HTTP method, just simply change like this:
+If we wanna to use different HTTP method, just simply change like this:
 
 ```bash
 // POST Method
@@ -79,7 +79,7 @@ delete {
 }
 ```
 
-How about request body? If you only need simple input, I recommend using `json` type will be good enough and you'll need specify the `json` type body inside the request format.
+How about request body? If only need a simple input, I recommend using `json` type will be good enough and we need specify the `json` type body inside the request format.
 
 ```bash
 post {
@@ -99,7 +99,7 @@ body:json {
 }
 ```
 
-However, if you needed to attach, that is different case. You'll need to use `multipart-form` type. With this, you can use `@file()` provided by Bruno in which it will locate local file using given path.
+However, if file attachment is needed, that is different case. We will need to use `multipart-form` type. With this, we can use `@file()` provided by Bruno in which it will locate local file using given path.
 
 
 ```bash
@@ -125,19 +125,13 @@ auth:bearer {
 
 For authentication I used Bearer Token with `{{token}}` variable, this token value must be set from login API. I will explain further about Asserts and Test in the next section, feel free to skip it.
 
-### 2. Custom scripts
+### 2. Asserts and Tests
 
-Pre-scripts
-
-Post-scripts
-
-### 3. Asserts and Tests
-
-Asserts is to determince whether the response is meet expectations.
-
-Tests using Chaijs which similar to PestPHP, and can have multiple test in a single `.bru` file.
+Bruno support automation test script in order to determine whether the response is meet expectations. For simple test, we can assertions but for complex tests, we can write test scripts. They using [chai](https://www.chaijs.com/) a BDD / TDD assertion library for [node](https://nodejs.org/en) which similar to [PestPHP](https://pestphp.com/) for PHP, and we can have multiple test in a single `.bru` file.
 
 #### Assert
+
+Example below, once the request is trigger and response will test with assert whether the HTTP code return as 200 and the `data` inside response body is defined.
 
 ```bash
 assert {
@@ -148,12 +142,10 @@ assert {
 
 #### Tests
 
+For more complex test, let say we want to verify the `data` inside response body is return the correct format, we can use `expect()` interface and we chain together natural language assertions. In other word, we're expect the data return to be a number or a string.
+
 ```bash
 tests {
-  test("should be able to return 200 http status", function() {
-    expect(res.getStatus()).to.equal(200);
-  })
-    
   test("verify response body structure", function() {
     const body = res.getBody();
 
@@ -174,23 +166,32 @@ tests {
 }
 ```
 
-### 4. Chrome Console
+#### Result
 
-Can use console.log
+The result of these asserts and tests will be all green.
 
-### 5. CLI
+![Bruno Asserts and Tests](/images/posts/bruno-asserts-test.png)
 
-Can run collection through CLI
+### 3. Chrome Console
+
+Can use Chrome Developer Tools same to Google Chrome! Just simply click, three dots on left top corner and click 'Chrome Console'. It will appear like this.
+
+![Bruno Chrome Console](/images/posts/bruno-chrome-console.png)
+
+We can debug the request inside this Custom Script. For this example, we just `console.log` at the Pre Request and Post Response section.
+
+![Bruno Console Log](/images/posts/bruno-console-log.png)
 
 ## Downside
 
-1. Sometime buggy because it's early version.
-2. Doesn't have load test feature in which Postman does have limited feature.
+This is just basic example of using Bruno. Of all good things, there's a few thing I need to highlight since Bruno is still new:
+
+1. Sometime it's buggy but I have no complain.
+2. Doesn't have load test feature.
+3. Documentation not updated.
 
 In a nutshell.
 
-This is just basic of using Bruno.
-
-Support this by subscribe the Gold Edition.
+Thanks to its totally offline, Git-friendly, and no-cloud-sync capabilities, Bruno has attracted a growing user base. By responding to bugs and feature requests, the project demonstrates its dedication to open-source ideals and ongoing improvement, which guarantees that Bruno is developing to meet the needs of developers. Support this by subscribe the [Gold Edition](https://www.usebruno.com/pricing).
 
 See you soon!
