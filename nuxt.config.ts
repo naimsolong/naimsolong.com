@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     }
-  }, // Test lagi
+  }, 
   content: {
     highlight: {
       theme: 'github-light',
@@ -33,8 +33,5 @@ export default defineNuxtConfig({
       enabled: false
     }
   },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss'
-  ]
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', "@nuxt/image"]
 })

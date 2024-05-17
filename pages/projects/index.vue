@@ -1,8 +1,19 @@
 <script setup>
 import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
+import moment from 'moment';
 import { profile } from '~/datas/root'
 const { $posthog } = useNuxtApp()
-const projects = await queryContent('projects').only(['id', 'title', 'description', 'image', '_path']).where({ draft: false }).sort({ published: -1 }).limit(50).find()
+const projects = await queryContent('projects')
+                  .only(['id', 'title', 'description', 'image', 'published', '_path'])
+                  .where({
+                    draft: false,
+                    published: {
+                      $lte: moment().format('YYYY-MM-DD')
+                    }
+                  })
+                  .sort({ published: -1 })
+                  .limit(50)
+                  .find()
 
 useSeoMeta({
   author: profile.fullname,

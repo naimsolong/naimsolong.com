@@ -1,5 +1,6 @@
 <script setup>
 import { useAsyncData, useCookie, useRuntimeConfig } from 'nuxt/app';
+import moment from 'moment';
 const { $posthog } = useNuxtApp()
 
 const { data: someData, error } = await useAsyncData('home', async (event) => {
@@ -29,7 +30,12 @@ const { data: someData, error } = await useAsyncData('home', async (event) => {
   <main>
     <ContentDoc :path="$route.path">
       <template v-slot="{ doc }">
-        {{ page }}
+        <span v-if="doc.published != ''">
+          <ProseH1>
+            {{ doc.title }}
+          </ProseH1>
+          <p class="mb-2 font-small text-gray-400"><small>Published at: {{ moment(doc.published).format('DD/MM/YYYY') }}</small></p>
+        </span>
         <ContentRenderer :value="doc" />
       </template>
       <template #not-found>
