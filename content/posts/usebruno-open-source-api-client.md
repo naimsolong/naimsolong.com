@@ -168,17 +168,17 @@ tests {
 
 #### Result
 
-The result of these asserts and tests will be all green.
+For each test description have green tick meaning the test is passed, some goes to assertions. Otherwise, if the test or assertions are failed, then the red cross will appear.
 
 ![Bruno Asserts and Tests](/images/posts/bruno-asserts-test.png)
 
 ### 3. Chrome Console
 
-Can use Chrome Developer Tools same to Google Chrome! Just simply click, three dots on left top corner and click 'Chrome Console'. It will appear like this.
+Can use Chrome Developer Tools to debug the request! Just simply click, three dots on left top corner and click 'Chrome Console'. It have Elements, Console, Network tab same with the Google Chrome!
 
 ![Bruno Chrome Console](/images/posts/bruno-chrome-console.png)
 
-We can debug the request inside this Custom Script. For this example, we just `console.log` at the Pre Request and Post Response section.
+We can debug the request using the Custom Script and `console.log` at the Pre Request or Post Response section. Then the Console tab will appear the result.
 
 ![Bruno Console Log](/images/posts/bruno-console-log.png)
 
@@ -186,12 +186,12 @@ We can debug the request inside this Custom Script. For this example, we just `c
 
 This is just basic example of using Bruno. Of all good things, there's a few thing I need to highlight since Bruno is still new:
 
-1. Sometime it's buggy but I have no complain.
+1. Sometime it's buggy.
 2. Doesn't have load test feature.
 3. Documentation not updated.
 
 In a nutshell.
 
-Thanks to its totally offline, Git-friendly, and no-cloud-sync capabilities, Bruno has attracted a growing user base. By responding to bugs and feature requests, the project demonstrates its dedication to open-source ideals and ongoing improvement, which guarantees that Bruno is developing to meet the needs of developers. Support this by subscribe the [Gold Edition](https://www.usebruno.com/pricing).
+Nevertheless, I'm not complaining much thanks to its totally offline, Git-friendly, and no-cloud-sync capabilities. Bruno has attracted a growing user base by responding to bugs and feature requests, the project demonstrates its dedication to open-source ideals and ongoing improvement, which guarantees that Bruno is developing to meet the needs of developers. Support them by subscribe the [Gold Edition](https://www.usebruno.com/pricing).
 
 See you soon!
