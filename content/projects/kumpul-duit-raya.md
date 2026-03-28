@@ -31,17 +31,15 @@ The app lets you set up a Raya event, add family members, and record every trans
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | Nuxt 3 + Vue 3 |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| State | Pinia (with persistence) |
-| UI Components | Radix Vue |
-| i18n | @nuxtjs/i18n |
-| PDF Export | jsPDF + jspdf-autotable |
-| Testing | Vitest |
-| Deployment | Cloudflare Workers |
+- Nuxt 3 + Vue 3
+- TypeScript
+- Tailwind CSS
+- Pinia (with persistence)
+- Radix Vue
+- @nuxtjs/i18n
+- jsPDF + jspdf-autotable
+- Vitest
+- Cloudflare Workers
 
 ## Highlights
 
