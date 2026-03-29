@@ -14,7 +14,7 @@ published: ''
 
   Currently, work on a full-time basis, it's a pleasure to share knowledge and updates about my career progress in articles and journals.
 
-  I believe in <b>simplicity</b>, <b>integrity</b> and <b>empathy</b> are the ideal approach to problem-solving in general.
+  I believe in <b>simplicity</b>, <b>integrity</b> and <b>empathy</b> are the ideal approach to problem-solving in general. Lately, I've been vibe coding with <b>Claude Code</b> — collaborating with AI to turn ideas into working code faster, iterating in real-time, and spending less time on boilerplate so I can focus on problems that actually matter.
 ::
 
 ::Spacing
