@@ -14,6 +14,10 @@ const props = defineProps({
         type: Boolean,
         default: false,
     },
+    img_bg: {
+        type: Boolean,
+        default: false,
+    },
 })
 
 const spacingClasses = computed(() => {
@@ -31,7 +35,7 @@ const imageClasses = computed(() => {
         'original': '',
     }
 
-    return classes[props.size] + ' object-cover mx-auto'
+    return classes[props.size] + ' object-cover mx-auto' + (props.img_bg ? ' bg-white rounded-lg p-2' : '')
 })
 </script>
 
