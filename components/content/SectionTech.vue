@@ -12,18 +12,18 @@ import { stacks } from '~/datas/root'
             Back End Stack
         </FontsHeaderTwo>
 
-        <SectionsImages :datas="stacks.backend"/>
+        <SectionsImages :datas="stacks.backend" :img_bg="true"/>
 
         <FontsHeaderTwo text_align="center">
             Front End Stack
         </FontsHeaderTwo>
 
-        <SectionsImages :datas="stacks.frontend"/>
+        <SectionsImages :datas="stacks.frontend" :img_bg="true"/>
 
         <FontsHeaderTwo text_align="center">
             DevOps Stack
         </FontsHeaderTwo>
 
-        <SectionsImages :datas="stacks.devops"/>
+        <SectionsImages :datas="stacks.devops" :img_bg="true"/>
     </SectionsSpacing>
 </template>
