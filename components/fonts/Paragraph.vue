@@ -21,6 +21,7 @@ const classes = computed(() => {
         'my-6',
         'text-lg',
         'tracking-wide',
+        'text-site-text',
         alignment,
     ]
 })

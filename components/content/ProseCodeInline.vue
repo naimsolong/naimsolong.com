@@ -5,8 +5,8 @@
 <style>
 .main-code {
   font-family: Consolas,"courier new";
-  color: crimson;
-  background-color: #f1f1f1;
+  color: #F59E0B;
+  background-color: #2C2C2E;
   padding: 2px 6px;
   border-radius: 6px;
   font-size: 105%;

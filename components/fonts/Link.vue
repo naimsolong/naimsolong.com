@@ -19,7 +19,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <a class="underline underline-offset-4 font-medium" :href="props.href" :target="props.target" :rel="props.rel">
+    <a class="underline underline-offset-4 font-medium text-site-accent hover:opacity-80 transition-opacity" :href="props.href" :target="props.target" :rel="props.rel">
         <slot/>
     </a>
 </template>

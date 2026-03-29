@@ -34,7 +34,7 @@ const { data: someData, error } = await useAsyncData('home', async (event) => {
           <ProseH1>
             {{ doc.title }}
           </ProseH1>
-          <p class="mb-2 font-small text-gray-400"><small>Published at: {{ moment(doc.published).format('DD/MM/YYYY') }}</small></p>
+          <p class="mb-2 font-small text-site-muted"><small>Published at: {{ moment(doc.published).format('DD/MM/YYYY') }}</small></p>
         </span>
         <ContentRenderer :value="doc" />
       </template>

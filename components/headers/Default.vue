@@ -4,7 +4,7 @@ import { profile } from '~/datas/root'
 const route = useRoute()
 
 const activeRoute = (currentRoute: string) => {
-    return {'text-gray-900': route.path.includes(currentRoute)}
+    return {'text-site-accent': route.path.includes(currentRoute)}
 }
 </script>
 
@@ -12,13 +12,13 @@ const activeRoute = (currentRoute: string) => {
     <header class="flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-10 pt-16 py-12">
         <div class="flex flex-col gap-5">
             <a href="/">
-                <p class="text-center sm:text-left text-2xl font-bold text-gray-800 ">{{ profile.fullname }}</p>
+                <p class="text-center sm:text-left text-2xl font-bold text-site-text">{{ profile.fullname }}</p>
             </a>
             <nav>
-                <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-gray-500">
-                    <li :class="activeRoute('/posts')"><a href="/posts">Posts</a></li>
-                    <li :class="activeRoute('/projects')"><a href="/projects">Projects</a></li>
-                    <li :class="activeRoute('/setup')"><a href="/setup">Setup</a></li>
+                <ul class="flex flex-wrap sm:justify-start justify-center uppercase text-xs font-semibold gap-7 text-site-muted">
+                    <li :class="activeRoute('/posts')"><a class="hover:text-site-accent transition-colors" href="/posts">Posts</a></li>
+                    <li :class="activeRoute('/projects')"><a class="hover:text-site-accent transition-colors" href="/projects">Projects</a></li>
+                    <li :class="activeRoute('/setup')"><a class="hover:text-site-accent transition-colors" href="/setup">Setup</a></li>
                 </ul>
             </nav>
         </div>
