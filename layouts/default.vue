@@ -7,7 +7,7 @@ let cloudflare_token = config.public.cloudflare_analytic_token
 useHead({
     bodyAttrs: {
         class: computed(() => {
-            return 'max-w-screen-lg px-10 md:px-6 mx-auto';
+            return 'max-w-screen-lg px-10 md:px-6 mx-auto bg-site-bg text-site-text';
         }),
     },
     link: [
@@ -41,6 +41,10 @@ useHead({
 <style>
     * {
         font-family: 'Roboto', sans-serif;
+    }
+    body {
+        background-color: #1C1C1E;
+        color: #E5E5E5;
     }
 </style>
 

@@ -46,11 +46,11 @@ const imageClasses = computed(() => {
                 />
             </a>
         
-            <p v-if="data.headline" class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+            <p v-if="data.headline" class="mt-4 text-lg font-bold text-site-text sm:text-xl">
                 {{ data.headline }}
             </p>
         
-            <p v-if="data.description" class="mt-1 max-w-sm text-sm tracking-wide text-gray-700">
+            <p v-if="data.description" class="mt-1 max-w-sm text-sm tracking-wide text-site-muted">
                 {{ data.description }}
             </p>
         </div>

@@ -33,7 +33,8 @@ defineProps({
 
 <style>
 pre {
-    background-color: #ebedf0;
+    background-color: #111113;
+    color: #E5E5E5;
     line-height: 1.2em;
     letter-spacing: 1.5px;
     border-radius: 9px;
