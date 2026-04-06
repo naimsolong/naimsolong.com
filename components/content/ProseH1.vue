@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-extrabold mt-10 mb-5 tracking-wider" :id="id">
+    <h1 class="text-3xl font-extrabold mt-10 mb-5 tracking-wider text-site-accent" :id="id">
         <a
         v-if="generate"
         :href="`#${id}`"

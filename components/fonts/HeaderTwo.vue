@@ -23,6 +23,7 @@ const classes = computed(() => {
         'mt-10',
         'mb-5',
         'tracking-wider',
+        'text-site-text',
         alignment,
     ]
 })
